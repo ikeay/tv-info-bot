@@ -1,0 +1,36 @@
+{
+  "name": "TV INFO BOT",
+  "description": "タレントのテレビ情報出演をお知らせしてくれるBot",
+  "repository": "https://github.com/ikeay/tv-info-bot",
+  "logo": "https://avatars3.githubusercontent.com/u/1245781",
+  "env": {
+    "PERSON_NAME": {
+      "description": "タレントの名前"
+    },
+    "TWITTER_CONSUMER_KEY": {
+      "description": "お知らせ用Twitterカスタマーキー"
+    },
+    "TWITTER_CONSUMER_SECRET": {
+      "description": "お知らせ用Twitterカスタマーシークレット"
+    },
+    "TWITTER_ACCESS_TOKEN" : {
+      "description": "お知らせ用Twitterアクセストークン"
+    },
+    "TWITTER_ACCESS_TOKEN_SECRET": {
+      "description": "お知らせ用Twitterアクセストークンシークレット"
+    },
+    "TZ": {
+      "value": "Asia/Tokyo"
+    },
+    "LANG": {
+      "value": "ja_JP.UTF-8"
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/ruby"
+}
