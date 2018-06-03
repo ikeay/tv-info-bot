@@ -5,8 +5,10 @@ TV Info Bot
 タレントのテレビの出演情報をTwitterにつぶやきます。
 
 ## Usage
-		$ bundle install --path vendor/bundle
-		$ bundle exec clockwork clock.rb
+```
+$ bundle install --path vendor/bundle
+$ bundle exec clockwork clock.rb
+```
 
 Deploy for Heroku！
 
