@@ -37,7 +37,7 @@ class TVInfoTweets
   end
 
   def render_for_tomorrow(data, now)
-    if now.hour >= 23
+    if now.hour >= 23 && now.min >= 30
       if data[:date][:start].day == now.day + 1
         tweet_text = MakeText.new(data[:name], data[:title], data[:channel], data[:date][:start])
         @tweets << tweet_text.for_tomorrow
