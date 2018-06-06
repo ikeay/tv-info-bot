@@ -29,4 +29,4 @@ handler do |job|
   tweets.tweet_all
 end
 
-every(10.seconds, 'response.job')
+every(30.minutes, 'response.job')
