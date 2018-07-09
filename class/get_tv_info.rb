@@ -8,7 +8,7 @@ class GetTVInfo
 
   def get_rss_url(name)
     name_escape = URI.escape(name)
-    base_url = "http://tv.so-net.ne.jp/rss/schedulesBySearch.action?condition.keyword=#{name_escape}&stationPlatformId=0"
+    base_url = "https://tv.so-net.ne.jp/rss/schedulesBySearch.action?condition.keyword=#{name_escape}&stationPlatformId=0"
   end
 
   def get_rss(name)
