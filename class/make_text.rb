@@ -16,7 +16,7 @@ class MakeText
     "\n"\
     "【出演情報】\n"\
     "#{@name}\n"\
-    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min}〜\n"\
+    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min.zero? ? '00' : @date.min}〜\n"\
     "#{@title}\n"\
     "#{@channel}\n"\
     "\n"\
@@ -28,7 +28,7 @@ class MakeText
     "\n"\
     "【出演情報】\n"\
     "#{@name}\n"\
-    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min}〜\n"\
+    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min.zero? ? '00' : @date.min}〜\n"\
     "#{@title}\n"\
     "#{@channel}\n"\
     "\n"\
