@@ -1,0 +1,15 @@
+version: 1
+
+update_configs:
+  - package_manager: "ruby:bundler"
+    directory: "/"
+    default_labels:
+      - dependencies
+    default_reviewers:
+      - ikeay
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "all"
+    update_schedule: "weekly"
+
