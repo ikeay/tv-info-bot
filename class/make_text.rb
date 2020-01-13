@@ -6,6 +6,20 @@ class MakeText
     @date = date
   end
 
+  def for_tomorrow
+    formatted_date = "%d/%d %d:%02d" % [@date.month, @date.day, @date.hour, @date.min]
+
+    "Botからお知らせ\n"\
+    "\n"\
+    "【出演情報】\n"\
+    "#{@name}\n"\
+    "#{formatted_date}〜\n"\
+    "#{@title}\n"\
+    "#{@channel}\n"\
+    "\n"\
+    "明日、よろしくおねがいします。"
+  end
+
   def for_30_min_later
     formatted_date = "%d/%d %d:%02d" % [@date.month, @date.day, @date.hour, @date.min]
 
