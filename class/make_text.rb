@@ -12,11 +12,13 @@ class MakeText
   end
 
   def for_tomorrow
+    formatted_date = "%d/%d %d:%02d" % [@date.month, @date.day, @date.hour, @date.min]
+
     "こんにちは、Botです#{random_emoji()}\n"\
     "\n"\
     "【出演情報】\n"\
     "#{@name}\n"\
-    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min.zero? ? '00' : @date.min}〜\n"\
+    "#{formatted_date}〜\n"\
     "#{@title}\n"\
     "#{@channel}\n"\
     "\n"\
@@ -24,11 +26,13 @@ class MakeText
   end
 
   def for_30_min_later
+    formatted_date = "%d/%d %d:%02d" % [@date.month, @date.day, @date.hour, @date.min]
+
     "こんにちは、Botです#{random_emoji()}\n"\
     "\n"\
     "【出演情報】\n"\
     "#{@name}\n"\
-    "#{@date.month}/#{@date.day} #{@date.hour}:#{@date.min.zero? ? '00' : @date.min}〜\n"\
+    "#{formatted_date}〜\n"\
     "#{@title}\n"\
     "#{@channel}\n"\
     "\n"\
