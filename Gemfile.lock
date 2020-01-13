@@ -7,14 +7,14 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2)
-    addressable (2.5.2)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     buftok (0.2.0)
     clockwork (2.0.4)
       activesupport
       tzinfo
     concurrent-ruby (1.1.5)
-    domain_name (0.5.20180417)
+    domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.7.5)
     equalizer (0.0.11)
@@ -23,28 +23,30 @@ GEM
       http-cookie (~> 1.0)
       http-form_data (~> 2.0)
       http_parser.rb (~> 0.6.0)
+    http-accept (1.7.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (2.1.1)
+    http-form_data (2.2.0)
     http_parser.rb (0.6.0)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
-    mime-types (3.1)
+    mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2016.0521)
+    mime-types-data (3.2019.1009)
     minitest (5.14.0)
-    multipart-post (2.0.0)
+    multipart-post (2.1.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     naught (1.1.0)
     netrc (0.11.0)
-    public_suffix (3.0.2)
+    public_suffix (4.0.3)
     rack (2.1.1)
     rack-protection (2.0.8.1)
       rack
-    rest-client (2.0.2)
+    rest-client (2.1.0)
+      http-accept (>= 1.7.0, < 2.0)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
       netrc (~> 0.8)
@@ -72,7 +74,7 @@ GEM
       thread_safe (~> 0.1)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.5)
+    unf_ext (0.0.7.6)
     zeitwerk (2.2.2)
 
 PLATFORMS
@@ -87,4 +89,4 @@ DEPENDENCIES
   twitter
 
 BUNDLED WITH
-   1.12.5
+   2.1.2
