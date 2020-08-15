@@ -29,8 +29,11 @@ class TVInfoTweets
     puts @tweets
   end
 
-  def render_for_30_min_later(data, now, after_30_min)
-    if data[:date][:start] > now && data[:date][:start] < after_30_min
+  def render_for_30_min_later(data)
+    now = Time.now
+    after_30_min = now + 30 * 60
+
+    if data[:date][:start] > now && data[:date][:start] <= after_30_min
       tweet_text = MakeText.new(data[:name], data[:title], data[:channel], data[:date][:start])
       @tweets << tweet_text.for_30_min_later
     end
